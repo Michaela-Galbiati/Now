@@ -26,6 +26,14 @@
   font-family: moly;
   src: url(/ceremony/Ceremony.ttf) format('truetype');
 }
+@font-face {
+  font-family: desi;
+  src: url(/designer/DESIGNER.otf) format('opentype');
+}
+@font-face {
+  font-family: buta;
+  src: url(/batuphat_script/Batuphat\ Script.otf) format('opentype');
+}
 
 html{
   height: 100%;
@@ -58,10 +66,10 @@ body {
 
 
 .panel-verde {
-    background-color:#18ff24;
+    background-color:#0278b8;
     }
 .panel-rosa {
-      background-color:#E0007C;
+      background-color:#f774bc;
 }
 .panel-vermelho{
   background-color: #941400;
@@ -103,8 +111,8 @@ body {
 
 
   #amarelo{
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     position: absolute;
     bottom: 0;
     border-radius: 50%;
@@ -120,18 +128,10 @@ body {
     height: 400px;
     position: absolute;
     bottom: 0;
-    margin-left: -80px;
+    margin-left: 80px;
     border-radius: 50%;
     margin-bottom: 400px;
     animation: bola 6s linear infinite;
-  }
-  @keyframes bola{
-    0%{
-      transform: scale(1);}
-    50%{
-      transform: scale(2);}
-    100%{
-      transform: scale(1);}
   }
 
 
@@ -140,13 +140,12 @@ body {
     width: 400px;
     height: 400px;
     position: absolute;
-    margin-right: -80px;
+    margin-right: 80px;
     margin-bottom: 400px;
     bottom: 0;
     right: 0;
     border-radius: 50%;
     animation: bola 6s linear infinite;
-
   }
 
 
@@ -167,14 +166,6 @@ body {
     padding: 40px;
     animation: logotipo 4s linear infinite;
   }
-  @keyframes logotipo{
-    0%{
-      transform: scale(1);}
-    50%{
-      transform: scale(1.15);}
-    100%{
-      transform: scale(1);}
-  }
 
 
 
@@ -186,25 +177,25 @@ body {
   }
 
 nav{
-  background-color: #6c88e3;
   display: flex;
+
+
 }
 
 .menutit{
   margin: 2px 2px 2px -2px;
-  padding: 8px;
-  border-right: 2px solid black;
+  padding: 15px;
   font-size: 18px;
 }
 .menua{
   text-decoration: none;
-  color: #e1d9f6;
+  color: #f9f7ff;
   position: relative;
 }
 .menua:after{
   content: '';
   position: absolute;
-  background-color: #36369c;
+  background-color: #ffffff;
   height: 4px;
   width: 0;
   right:0;
@@ -315,14 +306,123 @@ nav{
 
 
 
-.imagem{
-  width: 200px;
+
+
+#img1{
+  width: 600px;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: -350px;
+
+
 }
-.imagem1{
-  width: 220px;
+#img2{
+  width: 400px;
+  height: 600px;
+  margin-left: 50px;
+  margin-top: -205px;
+
+
+}
+#img3{
+  margin-left:50px;
+  width: 400px;
+  margin-top: -205px;
+  height: 600px;
+
+}
+#img4{
+  padding: 20px;
+  margin-left:50px;
+  width: 400px;
+  margin-top: -225px;
+  height: 630px;
+
+}
+#img5{
+  margin-left:50px;
+  margin-top: -185px;
+  width: 400px;
+  height: 600px;
+
 }
 
-.imagemc{
-  width: 400px;
+#container .box {
+  display:inline-block;
+  position:relative;
+}
+#container {
+  overflow-y: visible;
+  width: 100%;
+  overflow-x: visible;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position:absolute;
+}
+#container2 {
+  transform: rotate(90deg) translateY(-85vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+}
+
+#container {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255, 255) transparent;
+}
+
+#container::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+#container::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+#container::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+#img11{
+  width: 350px;
+  height: 520px;
+  margin-left: 50px;
+  margin-top: -220px;
+
+
+}
+#img22{
+  width: 350px;
+  height: 520px;
+  margin-left: 50px;
+  margin-top: -235px;
+
+
+}
+#img33{
+  margin-left:50px;
+  width: 350px;
+  margin-top: -205px;
+  height: 550px;
+
+}
+#img44{
   padding: 20px;
+  margin-left:50px;
+  width: 370px;
+  margin-top: -235px;
+  height: 550px;
+
+}
+#img55{
+  margin-left:50px;
+  margin-top: -225px;
+  width: 350px;
+  height: 520px;
+
 }
