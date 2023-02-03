@@ -38,10 +38,14 @@
 html{
   height: 100%;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 body {
   height: 100%;
-  background-image: linear-gradient(to bottom,#84BCFA, #B791FA, #F993CF, #FADDAA, #80FA78);
+  margin: 0;
+  padding: 0;
+  background-color: #80FA78;
   overflow-x: hidden;
   }
 
@@ -66,15 +70,18 @@ body {
 
 
 .panel-verde {
-    background-color:#0278b8;
+    background-color: #070707;
     }
 .panel-rosa {
       background-color:#f774bc;
+      z-index: 7;
 }
 .panel-vermelho{
-  background-color: #941400;
+  background-color: #045227;
 }
-
+.panel-one{
+  background-color: #ca78fa;
+}
 .panel-amarelo {
     background-color: #DBC12A;
     }
@@ -85,86 +92,9 @@ body {
 
 
 
-#verde{
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    margin-top: 50px;
-    animation: bola 6s linear infinite;
-}
-  #vermelho{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-right: 450px;
-    animation: bola 6s linear infinite;
-
-  }
-
-
-
-  #amarelo{
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
-    right: 0;
-    margin-bottom: 420px;
-    margin-right: 450px;
-    animation: bola 6s linear infinite;
-
-  }
-
-  #rosa{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    bottom: 0;
-    margin-left: 80px;
-    border-radius: 50%;
-    margin-bottom: 400px;
-    animation: bola 6s linear infinite;
-  }
-
-
-
-  #laranja{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    margin-right: 80px;
-    margin-bottom: 400px;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    animation: bola 6s linear infinite;
-  }
-
-
-  #azulclaro{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    border-radius: 50%;
-    bottom: 0;
-    animation: bola 6s linear infinite;
-  }
   #logo{
-    position: relative;
     width: 100%;
-    height: 100%;
-    border-radius: 30%;
-    margin-top: -560px;
-    padding: 40px;
-    animation: logotipo 4s linear infinite;
+    max-height: 750px;
   }
 
 
@@ -271,12 +201,27 @@ nav{
 
 
 
-
-
+#para2{
+  text-align: justify;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'marlie', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+#para1{
+  text-align: justify;
+  padding: 15px;
+  font-size:45px;
+  font-family: 'daniel','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .about{
   max-width: 600px;
 }
-
+#palavras{
+  margin-top: 20vh;
+  font-family: 'hello','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 600px;
+}
 .complete {
   margin-top: 5vh;
   margin-left: 30px;
@@ -425,4 +370,160 @@ nav{
   width: 350px;
   height: 520px;
 
+}
+
+#logoresp{
+  width: 100%;
+  max-height: 750px;
+  display: none;
+}
+#logoquad{
+  width: 100%;
+  max-height: 750px;
+  display: none;
+}
+.rolagem{
+  overflow: auto;
+  white-space: nowrap;
+  width: 900px;
+  height: 1400px;
+}
+.rolagem1{
+  overflow: auto;
+  white-space: nowrap;
+  width: 900px;
+  height: 1200px;
+}
+
+@media (max-width:700px) {
+  .rolagem{
+    height: 570px;
+  }
+  .rolagem1{
+    height: 470px;
+
+  }
+  #logo{
+    display: none;
+  }
+  #logoresp{
+    display: block;
+  }
+  #div5>div>div>h3{
+    margin-top: 50px;
+  }
+  #div5>div>div>video{
+    margin-top: -100px;
+    padding-left: 30px;
+  }
+  #para1{
+    font-size:35px;
+    margin-top: -35px;
+    margin-left: 20px;
+
+  }
+  #para2{
+    font-size: 25px;
+    margin-top: -35px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+  }
+  #palavras{
+    margin-top: 6vh;
+    margin-left: 100px;
+  }
+  .complete {
+    margin-top: 1vh;
+    margin-left: 5px;
+    font-size: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(0) infinite alternate,
+    10ms infinite normal;
+    border-right: 2px solid black;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 42%;
+    }
+  }
+  .textofooter{
+    font-size: 20px;
+  }
+  .footer{
+    margin-top: 50px;
+  }
+  .links{
+    font-size: 10px;
+  }
+  .email{
+    font-size: 20px;
+  }
+}
+@media (max-width:900px) and (min-width:701px){
+  .rolagem{
+    height: 750px;
+
+  }
+  .rolagem1{
+    height: 700px;
+
+  }
+}
+@media (max-width:1050px) and (min-width:901px){
+  .rolagem{
+    height: 950px;
+  }
+  .rolagem1{
+    height: 900px;
+  }
+}
+@media (max-width:1300px) and (min-width:1051px){
+  .rolagem{
+    height: 1050px;
+  }
+  .rolagem1{
+    height: 950px;
+  }
+}
+@media (max-width:1300px) and (min-width:701px){
+  #logo{
+    display: none;
+  }
+  #logoquad{
+    display: block;
+  }
+  .complete {
+    margin-top: 1vh;
+    margin-left: 5px;
+    font-size: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(0) infinite alternate,
+    10ms infinite normal;
+    border-right: 2px solid black;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 25%;
+    }
+  }
+  #para1{
+    font-size:35px;
+    margin-top: -35px;
+  }
+  #para2{
+    font-size: 35px;
+    margin-top: -15px;
+  }
+  #palavras{
+    margin-top: 6vh;
+    margin-left: 100px;
+  }
 }
