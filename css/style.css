@@ -256,79 +256,33 @@ nav{
 #img1{
   width: 600px;
   height: 400px;
-  margin-left: 50px;
-  margin-top: -350px;
 
 
 }
 #img2{
   width: 400px;
   height: 600px;
-  margin-left: 50px;
-  margin-top: -205px;
 
 
 }
 #img3{
-  margin-left:50px;
   width: 400px;
-  margin-top: -205px;
   height: 600px;
 
 }
 #img4{
-  padding: 20px;
-  margin-left:50px;
   width: 400px;
-  margin-top: -225px;
   height: 630px;
 
 }
 #img5{
-  margin-left:50px;
-  margin-top: -185px;
   width: 400px;
   height: 600px;
 
 }
 
-#container .box {
-  display:inline-block;
-  position:relative;
-}
-#container {
-  overflow-y: visible;
-  width: 100%;
-  overflow-x: visible;
-  transform: rotate(270deg) translateX(-100%);
-  transform-origin: top left;
-  position:absolute;
-}
-#container2 {
-  transform: rotate(90deg) translateY(-85vh);
-  transform-origin: top left;
-  white-space:nowrap;
-  font-size:0;
-}
 
-#container {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255, 255) transparent;
-}
 
-#container::-webkit-scrollbar {
-  width: 3px;
-  height: 3px; /* A altura só é vista quando a rolagem é horizontal */
-}
-
-#container::-webkit-scrollbar-track {
-  background: transparent;
-  padding: 2px;
-}
-
-#container::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);
-}
 
 
 
@@ -336,37 +290,27 @@ nav{
 #img11{
   width: 350px;
   height: 520px;
-  margin-left: 50px;
-  margin-top: -220px;
 
 
 }
 #img22{
   width: 350px;
   height: 520px;
-  margin-left: 50px;
-  margin-top: -235px;
 
 
 }
 #img33{
-  margin-left:50px;
   width: 350px;
-  margin-top: -205px;
   height: 550px;
 
 }
 #img44{
   padding: 20px;
-  margin-left:50px;
   width: 370px;
-  margin-top: -235px;
   height: 550px;
 
 }
 #img55{
-  margin-left:50px;
-  margin-top: -225px;
   width: 350px;
   height: 520px;
 
@@ -396,6 +340,9 @@ nav{
 }
 
 @media (max-width:700px) {
+  .menutit{
+    font-size: 14px;
+  }
   .rolagem{
     height: 570px;
   }
@@ -481,15 +428,71 @@ nav{
     height: 900px;
   }
 }
-@media (max-width:1300px) and (min-width:1051px){
-  .rolagem{
-    height: 1050px;
+@media (max-width:1400px) and (min-width:1051px){
+
+  #img1{
+    width: 350px;
+    height: 350px;
+
+
   }
-  .rolagem1{
-    height: 950px;
+  #img2{
+    width: 300px;
+    height: 500px;
+
+
+  }
+  #img3{
+    width: 300px;
+    height: 500px;
+
+  }
+  #img4{
+    width: 400px;
+    height: 630px;
+
+  }
+  #img5{
+    width: 400px;
+    height: 600px;
+
   }
 }
-@media (max-width:1300px) and (min-width:701px){
+@media (max-width:1050px) and (min-width:701px){
+  #img1{
+    width: 150px;
+    height: 150px;
+
+
+  }
+  #img2{
+    width: 150px;
+    height: 500px;
+
+
+  }
+
+
+.slide img{
+  position: absolute;
+  right: 0;
+  margin: auto;
+}
+.slide1 img{
+  position: absolute;
+  right: 0;
+  margin: auto;
+}
+
+
+
+
+
+  #img3{
+    width: 300px;
+    height: 500px;
+
+  }
   #logo{
     display: none;
   }
